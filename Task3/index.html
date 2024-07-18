@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple webpage example using HTML, CSS, and JavaScript">
+    <title>Enhanced Webpage</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <h1>StudyHaven</h1>
+        <button class="nav-toggle">
+            <span class="hamburger"></span>
+        </button>
+    </header>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+
+            <h3 style="text-align: center">Welcome to StudyHaven</h3>
+            <p style="text-align: center">Your Ultimate Destination for Learning and Growth</p>
+            <p style="text-align: center">Explore Resources</p>
+
+            <div class="slider">
+                <img src="study1.avif" alt="Study Image" class="slide">
+                <img src="study2.jpg" alt="Study Image" class="slide">
+                <img src="study3.jpeg" alt="Study Image" class="slide">
+                <img src="study4.jpg" alt="Study Image" class="slide">
+            </div>
+            <div class="nav2">
+                <button onclick="goPrev()">Prev</button>
+                <button onclick="goNext()">Next</button>
+            </div>
+
+            
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <!-- Headline: -->
+
+            <!-- "About StudyHaven"<br> -->
+            <b>Introduction:</b><br>
+
+            "At StudyHaven, we are dedicated to providing high-quality educational resources for students of all ages.
+            Our mission is to make learning accessible, engaging, and effective."<br>
+            <b>Our Story:</b><br>
+
+            "Founded in 2024, StudyHaven started with the goal of helping students overcome academic challenges. Our
+            team consists of experienced educators and tech enthusiasts passionate about education."<br>
+            <b>Our Vision:</b><br>
+
+            "To be the leading online platform for educational resources, empowering learners worldwide to achieve their
+            academic goals."
+        </section>
+
+        <section id="features">
+            <h2>Features</h2>
+            <div class="feature-container">
+                <div class="feature-grid">
+                    <!-- card 1 -->
+                    <div class="feature-card">
+                        <div class="icon-container">
+                            <img class="feature-svg" src="PersonalizedLearn.svg" />
+                        </div>
+                        <div class="feature-info">
+                            <div class="feature-title">
+                                Personalized Learning
+                            </div>
+                            <div class="feature-description">
+                                Offer tailored learning experiences through AI and machine learning to cater to
+                                individual
+                                student needs.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="feature-card">
+                        <div class="icon-container">
+                            <img class="feature-svg" src="Affordability.svg" />
+                        </div>
+                        <div class="feature-info">
+                            <div class="feature-title">
+                                Affordability
+                            </div>
+                            <div class="feature-description">
+                                Provide high-quality education at an affordable price point, making it accessible to a
+                                broader audience.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="feature-card">
+                        <div class="icon-container">
+                            <img class="feature-svg" src="IndustryPatner.svg" />
+                        </div>
+                        <div class="feature-info">
+                            <div class="feature-title">
+                                Industry Partnerships
+                            </div>
+                            <div class="feature-description">
+                                Collaborate with well-known companies and institutions to offer accredited courses and
+                                certifications, adding credibility to your offerings.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="feature-card">
+                        <div class="icon-container">
+                            <img class="feature-svg" src="InnovativeTech.svg" />
+                        </div>
+                        <div class="feature-info">
+                            <div class="feature-title">
+                                Innovative Technology
+                            </div>
+                            <div class="feature-description">
+                                Utilize cutting-edge technology, such as augmented reality or virtual reality, to create
+                                immersive learning experiences.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out with any questions, comments, or feedback. We're here to help and would love to
+                hear from you.</p>
+            <button id="contact-btn">Contact Us</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Enhanced Webpage. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://github.com" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        </div>
+    </footer>
+
+    <!-- Contact Form Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+                <p id="form-message"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
